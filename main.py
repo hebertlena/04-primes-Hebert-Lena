@@ -1,4 +1,5 @@
 """ programme est premier"""
+from math import  sqrt
 
 #### Fonction secondaire
 
@@ -9,7 +10,7 @@ def isprime(p):
     premier = True
     if p==1:
         premier =False
-    for diviseur in range(2,p) :
+    for diviseur in range(2,int(sqrt(p))+1) :
         if p % diviseur == 0 :
             premier = False
             break
